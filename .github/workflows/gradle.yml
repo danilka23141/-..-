@@ -3,7 +3,7 @@ name: Java CI with Gradle
 on:
   push:
     branches:
-      - test  # Запуск при push'е в ветку main
+      - test  # Запуск при push'е в ветку test
   pull_request:
     branches:
       - test  # Запуск при создании pull request'а в ветку main
