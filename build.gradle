@@ -35,24 +35,4 @@ test {
     // свойство chromeoptions.prefs используется для задания настроек браузера в проектах на основе Selenide, выключаем менеджер паролей
     systemProperty 'chromeoptions.prefs', System.getProperty('chromeoptions.prefs', "profile.password_manager_leak_detection=false")
 }
-buildCache {
-    local {
 
-        enabled true // По умолчанию true
-
-        removeUnused true // По умолчанию true
-
-    }
-    remote {
-        // Включить/отключить удаленный кэш
-        enabled true // По умолчанию false
-        // Указать URL-адрес сервера Build Cache Server
-        url "https://build-cache-server.example.com"
-        // Включить/отключить запись данных в кэш
-        push true // По умолчанию true
-        // Включить/отключить чтение данных из кэша
-        pull true // По умолчанию true
-        // ... (Дополнительные настройки - опционально)
-    }
-   
-}
