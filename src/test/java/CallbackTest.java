@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 class CallbackTest {
     @Test
     void shouldTest() {
-        open("http://0.0.0.0:7777");
+        open("http://localhost:9999");
         SelenideElement form = $("[data-test-id=callback-form]");
         form.$("[data-test-id=name] input").setValue("Даниил");
         form.$("[data-test-id=surname] input").setValue("Михалев");
